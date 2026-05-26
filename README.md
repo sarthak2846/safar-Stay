@@ -106,4 +106,4 @@ https://safar-stay.onrender.com/listings
 - Improve responsive design and mobile experience
 - Add search, filter, and favorites features for listings
 - Add user profiles and review history
-- Prepare deployment configuration for production
+
