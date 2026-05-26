@@ -56,7 +56,7 @@ node app.js
 Then open:
 
 ```text
-http://localhost:8080
+http://localhost:8080/listings
 ```
 
 ## ☁️ Hosted Demo
