@@ -64,7 +64,7 @@ http://localhost:8080
 This app is deployed on Render and available at:
 
 ```text
-https://safar-stay.onrender.com
+https://safar-stay.onrender.com/listings
 ```
 
 ## 🧭 How to Use
