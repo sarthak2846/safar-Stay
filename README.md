@@ -1,6 +1,6 @@
 # 🌍 SafarStay
 
-SafarStay is a modern travel listings web app built with Node.js, Express, MongoDB, and EJS. It lets travellers explore property listings, upload photos, share reviews, and manage listings through a polished user experience.
+SafarStay is a modern travel listings web app built with Node.js, Express, MongoDB, and EJS. This project uses a clean MVC architecture with models, views, and controllers separated into dedicated folders. The app lets travellers explore property listings, upload photos, share reviews, and manage stays through a polished user experience.
 
 ## ✨ Features
 
@@ -57,6 +57,14 @@ Then open:
 
 ```text
 http://localhost:8080
+```
+
+## ☁️ Hosted Demo
+
+This app is deployed on Render and available at:
+
+```text
+https://safar-stay.onrender.com
 ```
 
 ## 🧭 How to Use
