@@ -1,0 +1,56 @@
+<%-layout("/layouts/boilerplate")%>
+ <style>
+  .taxinfo {
+    display: none;
+  }
+
+  .show-tax .taxinfo {
+    display: inline;
+  }
+</style>
+
+<h3 class="mb-4 fw-bold text-dark border-start border-4 border-primary ps-3">
+  Available Stays
+</h3>
+
+<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4" id="listingContainer">
+
+<% for(let listing of allListings) { %>
+
+  <a href="/listings/<%= listing._id %>" class="listing-link text-decoration-none">
+    
+    <div class="card listing-card h-100 shadow-sm border-0">
+
+      <img 
+        src="<%= listing.image.url %>" 
+        class="card-img-top object-fit-cover" 
+        style="height: 250px;"
+        alt="listing_img"
+      >
+
+      <div class="card-body">
+        <p class="card-text mb-0">
+          <b><%= listing.title %></b><br>
+          ₹<%= listing.price.toLocaleString("en-IN") %>/night
+          <span class="taxinfo text-muted">
+            +18% GST
+          </span>
+        </p>
+      </div>
+
+    </div>
+
+  </a>
+
+<% } %>
+
+</div>
+
+<script>
+  const taxSwitch = document.getElementById("switchCheckDefault");
+  const container = document.getElementById("listingContainer");
+
+  taxSwitch.addEventListener("change", () => {
+    container.classList.toggle("show-tax");
+  });
+</script>
