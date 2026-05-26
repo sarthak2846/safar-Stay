@@ -92,6 +92,10 @@ http://localhost:8080
 - `joi`
 - `method-override`
 
-## 📝 License
+## 🌱 What’s Next
 
-This project is released under the ISC license.
+- Add unit and integration tests for key user flows
+- Improve responsive design and mobile experience
+- Add search, filter, and favorites features for listings
+- Add user profiles and review history
+- Prepare deployment configuration for production
