@@ -85,7 +85,7 @@ passport.deserializeUser(User.deserializeUser());
 
 
 
-//dbUrl
+
 // listening at port 8080
 
 app.listen(8080, () => {
@@ -95,7 +95,7 @@ app.listen(8080, () => {
 
 // mongo db connection
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/wanderlust ');
+ await mongoose.connect(dbUrl);
 }
 main()
   .then((res) => {
