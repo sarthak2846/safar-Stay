@@ -88,6 +88,10 @@ module.exports.valideateReview=(req,res,next)=>{
 module.exports.isReviewAuthor= async(req,res,next)=>{
     let {id,reviewId}=req.params;
    let review = await Review.findById(reviewId);
+     if (!res.locals.currUser) {
+        req.flash("error", "You must be logged in");
+       return res.redirect("/login");
+  }
     if (! review.author.equals(res.locals.currUser._id)) {
       req.flash("error", "you don't have permission to delete ");
       return res.redirect(`/listings/${id}`);
